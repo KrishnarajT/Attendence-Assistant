@@ -3,7 +3,7 @@
 \documentclass[11pt]{article}
 
 % Preamble
-
+\usepackage{multicol}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsfonts, amsmath, amssymb, amsthm}
 \usepackage{fancyhdr, float, graphicx}
@@ -54,7 +54,7 @@
 \fancyhead{}
 \fancyfoot{}
 \fancyhead[L]{\textit{\Large{Mini Project}}}
-\fancyhead[R]{\textit{Group 1 - Attendence Assistant}}
+\fancyhead[R]{\textit{Group A1}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
 \newtheorem{thm}{Theorem}
@@ -72,12 +72,19 @@
 
     %---------------------------NAMES-------------------------------
 
-    \huge\textsc{
-        MIT World Peace University\\
-        School of Computer Science and Engineering
-    }\\
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=.75\textwidth]{mitwpu.jpg}
+    \end{figure}
 
-    \vspace{0.75\baselineskip} % space after Uni Name
+    \huge\textsc{
+        School of Computer Science and Engineering\\
+    }
+    \vspace{0.75\baselineskip}
+    \Large\textsc{
+        Department of Computer Engineering and Technology
+    }\\
+        \vspace{0.75\baselineskip} % space after Uni Name
 
     \LARGE{
         Mini Project\\
@@ -96,7 +103,7 @@
 
     \huge{\textsc{
         Project Synopsis for\\
-        \textbf{Attendence Assistant}
+        \textbf{ML Powered Facial Attendance Tracking System}
         }} \\
 
 
@@ -120,7 +127,6 @@
     \vspace{0.5\baselineskip} % Whitespace before the editors
 
     \Large{
-        Batch A1\\
         PA10. Krishnaraj Thadesar - 1032210888\\
         PA07. Parth Zarekar - 1032210846\\
         PA25. Sourab Karad - 1032211150\\
@@ -130,7 +136,7 @@
 
 
     \vspace{0.5\baselineskip} % Whitespace below the editor list
-    \today
+    2024
 
 \end{titlepage}
 
@@ -140,6 +146,7 @@
 \clearpage
 
 \setcounter{page}{1}
+\begin{multicols}{2}
 
 \section{Abstract}
 The "Attendance Assistant" presents a forward-thinking solution for revolutionizing conventional attendance tracking in educational settings. Integrating cloud services such as Amazon S3, Amazon EC2, and Amazon DynamoDB with the official Raspberry Pi High-Quality Camera, the project offers a sophisticated hybrid architecture for efficient and scalable face recognition capabilities.\\
@@ -149,42 +156,12 @@ In the cloud infrastructure, Amazon S3 acts as the secure repository for images 
 At the edge, the Raspberry Pi High-Quality Camera handles real-time image capture, working in tandem with the Raspberry Pi as the edge computing device. This dynamic combination ensures preliminary image processing tasks are executed seamlessly, allowing for real-time interaction with the local environment.\\
 
 The "Attendance Assistant" represents a significant leap towards modernizing attendance tracking processes. By adopting a hybrid architecture that blends the strengths of cloud services with edge computing, the project offers flexibility and scalability, catering to the evolving demands of attendance management in educational institutions.
-\subsection{Facial Recognition and Machine Learning}
-The system leverages facial recognition technology powered by machine learning algorithms to accurately identify and track individuals.
 
-\subsection{Artificial Intelligence Integration}
-Artificial intelligence is embedded for intelligent decision-making and continuous improvement in attendance tracking processes.
+\subsection*{Keywords}
+Facial Recognition and Machine Learning, Artificial Intelligence Integration, Big Data Analysis and Attendance Tracking, Hybrid Architecture with Cloud Services, Cloud Services - AWS, Edge Computing with Raspberry Pi High-Quality Camera, Automated Attendance and Modernization, Educational Technology Integration, Scalability and Efficiency, Real-time Image Capture and Processing, NoSQL Database for Data Management, AWS Services Integration, section{Project Objectives}
 
-\subsection{Big Data Analysis and Attendance Tracking}
-Utilizing big data analysis techniques to process and analyze attendance data, ensuring accurate and insightful reporting.
+\section{Objectives}
 
-\subsection{Hybrid Architecture with Cloud Services}
-The system employs a hybrid architecture, seamlessly integrating both on-premise and cloud-based solutions for enhanced flexibility.
-
-\subsection{Cloud Services - AWS}
-Utilizing Amazon Web Services (AWS) for cloud functionalities, including Amazon S3 for efficient storage, Amazon EC2 for scalable computing, and Amazon DynamoDB as a NoSQL database.
-
-\subsection{Edge Computing with Raspberry Pi High-Quality Camera}
-Incorporating edge computing through Raspberry Pi with a high-quality camera for real-time image capture and processing at the device level.
-
-\subsection{Automated Attendance and Modernization}
-Implementing automated attendance processes to modernize and streamline the traditional manual tracking methods.
-
-\subsection{Educational Technology Integration}
-The system aligns with educational technology principles, providing a seamless and enhanced experience for both educators and students.
-
-\subsection{Scalability and Efficiency}
-Designed with scalability in mind, ensuring efficiency and performance as the system grows to accommodate larger educational settings.
-
-\subsection{Real-time Image Capture and Processing}
-Enabling real-time image capture and processing for instantaneous attendance updates and insights.
-
-\subsection{NoSQL Database for Data Management}
-Utilizing a NoSQL database, specifically Amazon DynamoDB, for efficient and scalable management of attendance data.
-
-\subsection{AWS Services Integration}
-Leveraging various AWS services to enhance functionality, security, and scalability in the overall system architecture.
-\section{Project Objectives}
 \begin{enumerate}
     \item Develop an automated attendance tracking system using computer vision for MITWPU Campus.
     
@@ -211,6 +188,7 @@ Leveraging various AWS services to enhance functionality, security, and scalabil
     \item Internet Connection
     
 \end{enumerate}
+\end{multicols}
 
 \begin{table}[H]
 \centering
@@ -224,6 +202,7 @@ Leveraging various AWS services to enhance functionality, security, and scalabil
     \caption{Hardware Requirements}
     \end{table}
 
+    \begin{multicols}{2}
 \subsection{Software Requirements}
 
 \subsubsection{Amazon S3 (Simple Storage Service):}
@@ -235,8 +214,10 @@ Amazon EC2 instances play a pivotal role in handling continuous, long-running pr
 \subsubsection{Amazon DynamoDB:}
 Amazon DynamoDB, a fully managed NoSQL database, serves as the cornerstone for storing dynamic client data, images, and recognition results. Leveraging DynamoDB's scalability and low-latency access, the system efficiently manages diverse and dynamic data associated with facial recognition.
 
-\subsubsection{Raspberry Pi High-Quality Camera and Raspberry Pi:}
-The hardware components, Raspberry Pi High-Quality Camera, and Raspberry Pi form the edge computing segment of the project. The Raspberry Pi High-Quality Camera, equipped with a high-quality camera module, interfaces seamlessly with the Raspberry Pi to capture crisp facial images. The Raspberry Pi, acting as an edge computing device, executes preliminary image processing tasks and ensures real-time interaction with the local environment.
+\subsubsection{Raspberry Pi OS:}
+The hardware components, Raspberry Pi High-Quality Camera, and Raspberry Pi form the edge computing segment of the project. The Raspberry Pi High-Quality Camera, equipped with a high-quality camera module, interfaces seamlessly with the Raspberry Pi to capture crisp facial images. The Raspberry Pi, acting as an edge computing device, executes preliminary image processing tasks and ensures real-time interaction with the local environment. We need an raspberry Pi compatible OS to operate these. This also includes Python. 
+
+\end{multicols}
 
 \section{Cost Estimates from AWS}
 
