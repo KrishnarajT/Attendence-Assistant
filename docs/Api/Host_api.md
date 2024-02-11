@@ -38,9 +38,9 @@ Key appears in the form of .pem file. Download it and keep it safe. It will be u
 Network Setting
 ![Alt Text](Images/NS.jpg)
 
-Launch the instance.
+- Launch the instance.
+- Click on the instance ID to see the details of the instance.
 
-Click on the instance ID to see the details of the instance.
 ![Alt Text](Images/ID.jpg)
 
 ## Step 5
@@ -50,7 +50,8 @@ Connect to the instance.
 
 ### Step 5.1
 
-To connect to the instance via SSH client
+-To connect to the instance via SSH client
+
 ![Alt Text](Images/SSH.jpg)
 
 ### Step 5.2
@@ -68,9 +69,9 @@ Copy the SSH command and run it in the terminal.
 
 ### Step 5.4
 
-After succesful connection, Update the system.
+- After succesful connection, Update the system.
 
-Download depenedencies and install them.
+- Download depenedencies and install them.
 
 ```bash
 Sudo apt install -y python3-pip nginx
