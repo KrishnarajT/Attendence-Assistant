@@ -96,6 +96,8 @@ server {
     server_name _(public ipv4 of the instance)_;
     location / {
         proxy_pass http://127.0.0.1:8000;
+    }
+}
 ```
 
 ![Alt Text](Images/Server_block.jpg)
