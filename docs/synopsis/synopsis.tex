@@ -3,7 +3,7 @@
 \documentclass[11pt]{article}
 
 % Preamble
-
+\usepackage{multicol}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsfonts, amsmath, amssymb, amsthm}
 \usepackage{fancyhdr, float, graphicx}
@@ -54,7 +54,7 @@
 \fancyhead{}
 \fancyfoot{}
 \fancyhead[L]{\textit{\Large{Mini Project}}}
-\fancyhead[R]{\textit{Group 1 - Attendence Assistant}}
+\fancyhead[R]{\textit{Group A1}}
 \fancyfoot[C]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
 \newtheorem{thm}{Theorem}
@@ -103,7 +103,7 @@
 
     \huge{\textsc{
         Project Synopsis for\\
-        \textbf{Attendence Assistant}
+        \textbf{ML Powered Facial Attendance Tracking System}
         }} \\
 
 
@@ -146,6 +146,7 @@
 \clearpage
 
 \setcounter{page}{1}
+\begin{multicols}{2}
 
 \section{Abstract}
 The "Attendance Assistant" presents a forward-thinking solution for revolutionizing conventional attendance tracking in educational settings. Integrating cloud services such as Amazon S3, Amazon EC2, and Amazon DynamoDB with the official Raspberry Pi High-Quality Camera, the project offers a sophisticated hybrid architecture for efficient and scalable face recognition capabilities.\\
@@ -187,6 +188,7 @@ Facial Recognition and Machine Learning, Artificial Intelligence Integration, Bi
     \item Internet Connection
     
 \end{enumerate}
+\end{multicols}
 
 \begin{table}[H]
 \centering
@@ -200,6 +202,7 @@ Facial Recognition and Machine Learning, Artificial Intelligence Integration, Bi
     \caption{Hardware Requirements}
     \end{table}
 
+    \begin{multicols}{2}
 \subsection{Software Requirements}
 
 \subsubsection{Amazon S3 (Simple Storage Service):}
@@ -213,6 +216,8 @@ Amazon DynamoDB, a fully managed NoSQL database, serves as the cornerstone for s
 
 \subsubsection{Raspberry Pi OS:}
 The hardware components, Raspberry Pi High-Quality Camera, and Raspberry Pi form the edge computing segment of the project. The Raspberry Pi High-Quality Camera, equipped with a high-quality camera module, interfaces seamlessly with the Raspberry Pi to capture crisp facial images. The Raspberry Pi, acting as an edge computing device, executes preliminary image processing tasks and ensures real-time interaction with the local environment. We need an raspberry Pi compatible OS to operate these. This also includes Python. 
+
+\end{multicols}
 
 \section{Cost Estimates from AWS}
 
